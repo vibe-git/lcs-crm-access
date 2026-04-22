@@ -1,0 +1,92 @@
+roles:
+  MD - LCS Mgmt:
+    display_name: MD - LCS Mgmt
+    description: MD LCS 管理层权限配置
+
+    systems:
+
+      CRM系统:
+        功能权限:
+          菜单权限:
+            菜单-预约管理:
+              enabled: yes
+              子菜单:
+                菜单-场次管理: yes
+                菜单-预约单: yes
+                菜单-黑名单管理: no
+        数据权限:
+          会员管理:
+            会员范围: 全部会员数据
+            交易历史: 全部会员数据
+            会员权益-券明细: 全部会员数据
+            会员权益-积分明细: 全部会员数据
+            互动历史: 全部会员数据
+            权益渠道: 归属在本组织及下属组织的权益数据
+
+      微信小程序-预约管理:
+        功能权限:
+          模块权限:
+            预约管理:
+              enabled: yes
+              子模块:
+                场次管理:
+                  enabled: yes
+                  功能限制:
+                    活动预约场次管理: yes
+                    产品预约场次操作: yes
+                    产品预约场次查看: yes
+                    工作坊场次管理: yes
+                预约单管理:
+                  enabled: yes
+                  功能限制:
+                    活动/产品预约单: yes
+                    工作坊预约单: yes
+                黑名单管理:
+                  enabled: no
+                  功能限制:
+                    黑名单查看: no
+                    取消黑名单: no
+            核销小程序:
+              enabled: yes
+            核销小程序-工作坊:
+              enabled: no
+        数据权限:
+          会员管理:
+            预约单及黑名单信息: 归属在本组织及下属组织的会员数据
+          会员数据范围:
+            预约单信息: no
+            黑名单信息: no
+
+      tableau: no
+
+      手机报表:
+        功能权限:
+          模块权限:
+            移动端MD报表:
+              enabled: yes
+              子模块:
+                查看ASP: yes
+                查看销售毛利(率): no
+            移动端MD菜单:
+              enabled: yes
+              子模块:
+                销售概览菜单: yes
+                会员概览菜单: yes
+                门店分析菜单: yes
+                用户中心菜单: yes
+            更多MD菜单:
+              enabled: yes
+              子模块:
+                L2 Online B2C Overview: no
+                L3 LCS WeCom (企微私域运营): yes
+        数据权限:
+          移动端MD报表:
+            报表数据范围: 归属在本组织及下属组织的数据
+
+      CDP: no
+      微信小程序-活动运营: no
+      PID: no
+      CCMD: no
+      精选内容: no
+      创意管理: no
+      补件物流管理: no

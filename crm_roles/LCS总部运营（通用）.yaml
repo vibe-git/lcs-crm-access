@@ -1,7 +1,7 @@
 roles:
-  LCS门店销售（通用）:
-    display_name: LCS门店销售（通用角色）
-    description: 门店销售通用权限配置
+  LCS总部运营（通用）:
+    display_name: LCS总部运营（通用角色）
+    description: 总部运营通用权限配置
 
     systems:
 
@@ -38,14 +38,14 @@ roles:
                 菜单-数据概览: yes
                 菜单-销售明细: yes
                 菜单-会员表现: yes
-                菜单-会员忠诚项目: no
-                菜单-企微私域运营: no
-                菜单-营销活动成效: no
-                菜单-沟通成效: no
+                菜单-会员忠诚项目: yes
+                菜单-企微私域运营: yes
+                菜单-营销活动成效: yes
+                菜单-沟通成效: yes
             菜单-预约管理:
               enabled: yes
               子菜单:
-                菜单-场次管理: no
+                菜单-场次管理: yes
                 菜单-预约单: yes
                 菜单-黑名单管理: no
         数据权限:
@@ -69,7 +69,7 @@ roles:
                     活动预约场次管理: yes
                     产品预约场次操作: yes
                     产品预约场次查看: yes
-                    工作坊场次管理: no
+                    工作坊场次管理: yes
                 预约单管理:
                   enabled: yes
                   功能限制:
@@ -117,26 +117,25 @@ roles:
                   功能限制:
                     查看详情&列表: yes
                 会员忠诚项目:
-                  enabled: no
+                  enabled: yes
                   功能限制:
-                    查看详情&列表: no
+                    查看详情&列表: yes
                 企微私域运营:
                   enabled: yes
                   功能限制:
                     查看详情&列表: yes
                 营销活动成效:
-                  enabled: no
+                  enabled: yes
                   功能限制:
-                    查看详情&列表: no
+                    查看详情&列表: yes
                 沟通成效:
-                  enabled: no
+                  enabled: yes
                   功能限制:
-                    查看详情&列表: no
+                    查看详情&列表: yes
         数据权限:
           客户数据报表:
             客户数据报表: 归属在本组织及下属组织的会员数据
 
-      # 以下系统该角色无任何权限
       手机报表: no
       CDP: no
       微信小程序-活动运营: no
