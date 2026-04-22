@@ -1,0 +1,43 @@
+roles:
+  CCMD LCS User:
+    display_name: CCMD LCS User
+    description: CCMD LCS 用户权限配置
+
+    systems:
+
+      CRM系统: no
+      微信小程序-预约管理: no
+      tableau: no
+      手机报表: no
+      CDP: no
+      微信小程序-活动运营: no
+      PID: no
+
+      CCMD:
+        功能权限:
+          模块权限:
+            内容管理:
+              enabled: yes
+              子模块:
+                资产管理:
+                  enabled: yes
+                  功能限制:
+                    查看详情&列表: yes
+                    创建&编辑: no
+                标签管理:
+                  enabled: yes
+                  功能限制:
+                    查看详情&列表: yes
+                    创建&编辑: no
+                日志管理:
+                  enabled: no
+                  功能限制:
+                    查看详情&列表: no
+                用户管理:
+                  enabled: no
+                  功能限制:
+                    查看详情&列表: no
+
+      精选内容: no
+      创意管理: no
+      补件物流管理: no
