@@ -57,9 +57,9 @@ roles:
 
 ---
 
-## AI Skills
+## Skills
 
-本仓库在 `skills/` 下内置Skill，可在AI工具中直接使用。
+本仓库在 `skills/` 下内置Skill，可在CLI工具中直接使用。
 
 ### `querying-crm-roles` — 权限查询
 
